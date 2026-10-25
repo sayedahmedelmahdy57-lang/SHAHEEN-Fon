@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b0d">
+<meta name="description" content="شاهين فون - بيع وشراء الموبايلات، إكسسوارات المحمول، وخدمات الصيانة.">
+<title>SHAHEEN | شاهين فون</title>
+<style>
+:root{--bg:#080b0d;--panel:#11171b;--silver:#cfd6da;--white:#f8fbfd;--muted:#aeb8bd;--line:#3d484e;--glow:#e9f7ff;--gold:#b6c0c6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#1a252b 0,#080b0d 48%);color:var(--white);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080b0df2;backdrop-filter:blur(12px);border-bottom:1px solid #455057}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:2px}.eagle{width:43px;height:43px;border:1px solid var(--silver);border-radius:12px;display:grid;place-items:center;color:#fff;font-size:22px;box-shadow:0 0 18px #dceefa35}.brand small{display:block;letter-spacing:0;color:var(--silver);font-size:12px;font-weight:700}.navlinks{display:flex;gap:20px;color:#d6dce0;font-size:14px}.navlinks a:hover{color:white;text-shadow:0 0 10px #fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #e8f0f4;border-radius:8px;padding:11px 18px;font-weight:800;transition:.2s}.btn.primary{background:linear-gradient(135deg,#fff,#aeb9bf);color:#080b0d;box-shadow:0 0 22px #dceefa22}.btn:hover{transform:translateY(-2px);box-shadow:0 0 22px #e9f7ff35}
+.hero{padding:76px 0 58px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:34px;min-height:500px}.eyebrow{display:inline-block;border:1px solid #6c777d;padding:5px 13px;border-radius:99px;color:#e3eaee;font-size:13px;letter-spacing:1px}.hero h1{font-size:clamp(36px,6vw,68px);line-height:1.2;margin:18px 0}.hero h1 span{color:#d6e0e5;text-shadow:0 0 20px #e9f7ff25}.hero p{color:var(--muted);max-width:580px;font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.sign{position:relative;min-height:340px;border:2px solid #dfe8ed;border-radius:18px;background:linear-gradient(145deg,#10191e,#050708 72%);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 0 0 7px #ffffff06,0 0 38px #e9f7ff18,inset 0 0 40px #dceefa0a}.sign:before,.sign:after{content:"";position:absolute;top:10%;height:80%;width:24px;border:3px solid #e6eef2;filter:drop-shadow(0 0 8px #fff);transform:skewY(-16deg)}.sign:before{right:18px;border-left:0}.sign:after{left:18px;border-right:0}.oppo{font-family:Arial,sans-serif;font-size:clamp(44px,6vw,70px);font-weight:500;letter-spacing:2px;text-shadow:0 0 18px #fff9}.sign .english{font-size:clamp(25px,3.5vw,38px);font-weight:900;letter-spacing:5px;margin-top:4px}.sign .arabic{font-size:clamp(29px,4vw,42px);font-weight:900}.sign .tag{color:#b9c5cb;font-size:13px;letter-spacing:2px;margin-top:12px}
+section{padding:48px 0}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:clamp(26px,4vw,38px);margin:0 0 6px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#151d22,#0d1114);border:1px solid #455158;border-radius:14px;padding:24px;box-shadow:inset 0 1px #ffffff09}.icon{width:48px;height:48px;display:grid;place-items:center;border:1px solid #bfcbd1;border-radius:12px;font-size:24px;box-shadow:0 0 15px #dceefa15;margin-bottom:14px}.card h3{margin:0 0 7px;font-size:21px}.card p{margin:0;color:var(--muted);font-size:15px}
+.banner{border:1px solid #aebbc2;border-radius:16px;padding:30px;background:linear-gradient(110deg,#dbe4e8 0%,#7c8a92 35%,#151d22 75%);color:#080b0d;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner p{margin:0;color:#202a30}.banner h2{margin:0 0 5px;font-size:clamp(24px,4vw,34px)}.banner .btn{background:#080b0d;color:#fff;border-color:#080b0d;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-box{border:1px solid #455158;background:#11171b;border-radius:14px;padding:24px}.contact-box h3{margin-top:0}.contact-line{padding:10px 0;border-bottom:1px solid #2c363c;color:#d7dfe3}.contact-line:last-child{border:0}
+footer{border-top:1px solid #3d484e;padding:22px 0;color:#aeb8bd;text-align:center;font-size:13px}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:48px}.sign{min-height:280px}.cards{grid-template-columns:1fr}.banner{align-items:flex-start;flex-direction:column}.contact-grid{grid-template-columns:1fr}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="eagle">🦅</span><span>SHAHEEN<small>شاهين فون</small></span></a>
+<nav class="navlinks"><a href="#services">خدماتنا</a><a href="#about">عن المحل</a><a href="#contact">تواصل معنا</a></nav>
+<a class="btn" href="https://wa.me/201018366359" target="_blank" rel="noopener">واتساب ↗</a>
+</div></header>
+<main>
+<div class="wrap hero" id="home">
+<div><span class="eyebrow">موبايلات • إكسسوارات • صيانة</span>
+<h1>كل خدمات موبايلك<br><span>في مكان واحد</span></h1>
+<p>أهلًا بيك في شاهين فون — بيع وشراء الموبايلات، إكسسوارات المحمول، وخدمات الصيانة. تواصل معنا للاستفسار عن المنتجات والأسعار.</p>
+<div class="actions"><a class="btn primary" href="https://wa.me/201018366359" target="_blank" rel="noopener">اسأل عن منتج على واتساب</a><a class="btn" href="#services">اكتشف خدماتنا ↓</a></div>
+</div>
+<div class="sign" aria-label="SHAHEEN شاهين"><div class="oppo">oppo</div><div class="english">SHAHEEN</div><div class="arabic">شاهين</div><div class="tag">MOBILE • ACCESSORIES • SERVICE</div></div>
+</div>
+<section id="services"><div class="wrap"><div class="section-head"><h2>خدمات شاهين فون</h2><p>خدمات المحمول بتصميم عصري وهوية الأسود والفضي</p></div>
+<div class="cards">
+<article class="card"><div class="icon">📱</div><h3>بيع وشراء الموبايلات</h3><p>استفسر عن الأجهزة المتاحة وحالتها وسعرها من خلال التواصل المباشر معنا.</p></article>
+<article class="card"><div class="icon">🛠️</div><h3>صيانة المحمول</h3><p>استقبال طلبات الصيانة وفحص الأعطال، مع توضيح التكلفة قبل تنفيذ الإصلاح.</p></article>
+<article class="card"><div class="icon">🎧</div><h3>إكسسوارات المحمول</h3><p>اسأل عن الجرابات، واقيات الشاشة، الشواحن، السماعات وباقي الإكسسوارات.</p></article>
+</div></div></section>
+<section id="about"><div class="wrap"><div class="banner"><div><h2>شاهين فون — اختيارك للموبايل</h2><p>تواصل معنا لمعرفة المتاح والعروض الحالية.</p></div><a class="btn" href="https://wa.me/201018366359" target="_blank" rel="noopener">تواصل الآن</a></div></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><h2>تواصل معنا</h2><p>يسعدنا استقبال استفساراتك</p></div><div class="contact-grid">
+<div class="contact-box"><h3>بيانات المحل</h3><div class="contact-line">📍 العنوان: شارع محمد صلاح</div><div class="contact-line">📞 الهاتف: 01018366359</div><div class="contact-line">💬 واتساب: متاح للاستفسارات</div></div>
+<div class="contact-box"><h3>اسأل عن السعر أو التوفر</h3><p style="color:#aeb8bd">الأسعار وتوفر المنتجات تتغير؛ تواصل معنا للتأكد من التفاصيل قبل الحضور.</p><a class="btn primary" href="https://wa.me/201018366359?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC" target="_blank" rel="noopener">راسلنا على واتساب ↗</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© SHAHEEN شاهين فون — جميع الحقوق محفوظة</div></footer>
+</body></html>
